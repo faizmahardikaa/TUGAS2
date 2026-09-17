@@ -1,0 +1,19 @@
+{
+  "name": "tugas2-keamanan-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "start": "node --env-file=.env src/server.js",
+    "test": "node --test test/*.test.js",
+    "demo": "node --env-file=.env scripts/demo.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
